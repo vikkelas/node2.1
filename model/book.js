@@ -4,9 +4,10 @@ module.exports = class Book {
         title='',
         description = '',
         authors='',
-        favorite='',
+        favorite=false,
         fileCover= '',
-        fileName = ''
+        fileName = '',
+        fileBook = ''
         ) {
         this.id = uuidv4();
         this.title = title;
@@ -15,5 +16,6 @@ module.exports = class Book {
         this.favorite = favorite;
         this.filecover = fileCover;
         this.fileName = fileName;
+        this.fileBook = fileBook;
     }
 }
